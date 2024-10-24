@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightblue;
+            color: aliceblue;
+            padding: 10px 20px;
+        }
+        .logo{
+            font-size: 50px;
+        }
+        .menu{
+            font-size: 50px;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            font-size: larger;
+        }
+        .nav-links li{
+            margin-right: 20px;
+        }
+        .nav-links li a{
+            text-decoration: none;
+        }
+        @media screen and (max-width:1200px){
+           .nav-links{
+            display:none;
+            flex-direction:column;
+            position: absolute;
+            top: 60px;
+            left:0;
+            width:100%
+           } 
+           nav{
+            background-color: aqua;
+            color: aliceblue;
+           }
+           .nav-links li{
+            text-align: center;
+            margin: 0%;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+           }
+           .menu{
+            display: block;
+           }
+        }
+        @media screen and (max-width:1000px){
+           .nav-links{
+            display:none;
+            flex-direction:column;
+            position: absolute;
+            top: 60px;
+            left:0;
+            width:100%;
+          
+           } 
+           nav{
+            background-color: rgb(0, 34, 255);
+            color: aliceblue;
+           }
+           .nav-links li{
+            text-align: center;
+            margin: 0%;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+           }
+           .menu{
+            display: block;
+           }
+        }
+        @media screen and (max-width:800px){
+           .nav-links{
+            display:none;
+            flex-direction:column;
+            position: absolute;
+            top: 60px;
+            left:0;
+            width:100%
+           } 
+           nav{
+            background-color: rgb(93, 0, 255);
+            color: aliceblue;
+           }
+           .nav-links li{
+            text-align: center;
+            margin: 0%;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+           }
+           .menu{
+            display: block;
+           }
+           .nav-links li i{
+            display: block;
+           }
+           }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fa-brands fa-css3"></i></div>
+        <ul class="nav-links">
+            <li><a href="https://aptech-education.com.pk/">home</a><i class="fa-solid fa-house"></i></li>
+            <li><a href="https://aptech-education.com.pk/">services</a><i class="fa-solid fa-bell-concierge"></i></li>
+            <li><a href="https://aptech-education.com.pk/">about</a><i class="fa-solid fa-address-card"></i></li>
+            <li><a href="https://aptech-education.com.pk/">products</a><i class="fa-brands fa-product-hunt"></i></li>
+            <li><a href="https://aptech-education.com.pk/">contact</a><i class="fa-solid fa-address-book"></i></li>
+        </ul>
+    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+</body>
+</html>
